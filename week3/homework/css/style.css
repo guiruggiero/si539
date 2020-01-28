@@ -1,0 +1,68 @@
+/*STARTER CODE*/
+
+/*
+We have started some of the selectors for you.
+For others we have provided hints on what the selectors should be.
+There are some missing selectors.
+
+Make sure to learn what the starter code does!!
+*/
+
+body{
+  color: black;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 1.2em;
+  background-size: cover ;
+  background-position: center;
+}
+
+main{
+  margin-bottom: 100px;
+}
+
+h1{
+  color: #8000FF;
+  font-size: 2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+caption{
+  margin:5px 0px;
+}
+
+p{}
+
+a{}
+
+table{
+    border: 2px solid black;
+}
+
+.colhead{
+  background-color: #7e0820;
+  color: white;
+}
+
+.rowhead{}
+
+td{
+  padding: 15px;
+}
+
+tr{}
+
+*{}
+
+thead tr:first-child th:first-child{}
+
+footer{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  background:black;
+  text-align:center;
+  color: white;
+}

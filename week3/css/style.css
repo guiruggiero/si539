@@ -1,0 +1,46 @@
+body{
+margin: 0;
+padding: 0;
+}
+
+h1{
+  font-size: 32px;
+  text-align: center;
+  line-height: 2;
+}
+
+span{
+  font-family: courier;
+  font-weight: bold;
+}
+
+
+/* Desktop layout */
+.container{
+  display: grid;
+  /*grid-template-columns: ;*/
+  /*grid-column-gap: ;*/
+  /*grid-row-gap: ;*/
+}
+
+img{
+  
+}
+
+.container p{
+  display:none;
+  background-color: black;
+  color: white;
+  
+}
+
+.container > *{
+  border:2px solid black;
+}
+
+footer{
+  background:black;
+  color:white;
+  text-align: center;
+
+}
