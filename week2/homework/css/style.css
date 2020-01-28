@@ -1,0 +1,73 @@
+/*
+SI 539, homework 2
+Created by Gui Ruggiero
+*/
+
+html {
+    font-family: "Lucida Grande", sans-serif;
+    background: #000000;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-shadow: #808080;
+    padding: 5px;
+    filter: blur(2px);
+}
+
+p {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 525px;
+}
+
+div {
+    min-height: 150px;
+    padding: 25px;
+}
+
+#red {
+    background: #e63737;
+    text-align: right;
+}
+
+#blue {
+    background: #180bd3;
+    text-align: left;
+}
+
+#yellow {
+    background: #e7e419;
+    text-align: right;
+}
+
+#yellow h2 {
+    color: #000000;
+    text-shadow: #c7e2c7;
+}
+
+#yellow p {
+    color: #000000;
+}
+
+#green {
+    background: #099404;
+    text-align: left;
+}
+
+footer {
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
