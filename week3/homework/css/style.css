@@ -3,10 +3,8 @@ SI 539, homework 3
 Developed by Gui Ruggiero
 */
 
-/* https://github.com/guiruggiero/homework3 */
-
 body{
-  color: black;
+  color: #000000;
   font-size: 16px;
   margin: 1.2em;
 
@@ -16,6 +14,21 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+main{
+  margin-bottom: 100px;
+}
+
+h1{
+  color: #8000FF;
+  font-size: 2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+caption{
+  margin:5px 0px;
 }
 
 p{
@@ -31,11 +44,11 @@ a{
   text-decoration-style: wavy;
 }
 
-:focus{ /* flag - Focused elements should have a 2px black border*/
+*:focus{
   border: 2px solid #000000;
 }
 
-footer{
+footer p{
   left:0px;
   bottom:0px;
   width:100%;
@@ -43,26 +56,51 @@ footer{
   min-height: 60px;
   position: fixed;
   background: #000000;
-  color: #ffffff; /* flag */
+  color: #ffffff;
   text-align: center;
-}
-
-main{
-  margin-bottom: 100px;
 }
 
 table{
   margin: 0 auto;
   border: 2px solid #000000;
-  border-radius: 15px; /* flag */
+  border-radius: 15px;
+  border-collapse: separate;
 }
 
-/* .rowhead{ flag
-  border: 2px solid #000000;
-} */
+.rowhead{
+  border-top: 2px solid #000000;
+}
+
+td{
+  text-align: center;
+  border-top: 2px solid #000000;
+  padding: 15px;
+}
 
 tr{
   border: 2px solid #000000;
+}
+
+.colhead{ 
+  min-width: 100px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #7e0820;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #d1d1d1;
+}
+
+tbody tr:nth-child(even){
+  background-color: transparent;
+}
+
+tbody tr:hover{
+  background-color: #F4667E;
+  opacity: 0.5;
 }
 
 thead tr:first-child th:first-child{
@@ -80,49 +118,3 @@ tbody tr:last-child th:first-child{
 tbody tr:last-child td:last-child{
   border-bottom-right-radius: 15px;
 }
-
-.colhead{ 
-  min-width: 100px;
-  padding: 10px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #7e0820;
-}
-
-td{
-  text-align: center;
-  border-top: 2px solid #000000;
-  padding: 15px;
-}
-
-tbody tr:nth-child(odd){
-  background-color: #d1d1d1;
-}
-
-tbody tr:nth-child(even){
-  background-color: transparent;
-}
-
-tbody tr:hover{
-  background-color: rgb(126,8,32);
-  opacity: 0.5;
-  color: #000000; /* flag */
-}
-
-
-
-
-
-h1{
-  color: #8000FF;
-  font-size: 2em;
-  line-height: 1.5;
-  text-align: center;
-}
-
-caption{
-  margin:5px 0px;
-}
-
-*{}

@@ -1,0 +1,62 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: yellow;
+  margin: 2%;
+}
+
+h1{
+  font-size: 32px;
+  text-align: center;
+  line-height: 2;
+}
+
+span{
+  font-family: courier;
+  font-weight: bold;
+}
+
+
+/* Desktop layout */
+.container{
+  display: grid;
+  /*grid-template-columns: ;*/
+  /*grid-column-gap: ;*/
+  /*grid-row-gap: ;*/
+}
+
+/* 300px 500px 300px
+300px auto 300px
+auto auto auto
+repeat(3, 300px)
+1fr 1fr 1fr
+1fr 2fr 1fr */
+
+img{
+  
+}
+
+.container p{
+  display:none;
+  background-color: black;
+  color: white;
+  
+}
+
+.container > *{
+  border:2px solid black;
+}
+
+footer{
+  background:black;
+  color:white;
+  text-align: center;
+
+}
+
+@media screen and (min-width: 680px){
+  body{
+    background: green;
+    margin: 2%;
+  }
+}
