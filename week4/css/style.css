@@ -20,7 +20,12 @@ span{
 /* Desktop layout */
 .container{
   display: grid;
-  /*grid-template-columns: ;*/
+  /* grid-template-columns: 300px 500px 300px; */
+  /* grid-template-columns: 300px auto 300px; */
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-columns: repeat(3, 300px); */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 2fr 1fr;
   /*grid-column-gap: ;*/
   /*grid-row-gap: ;*/
 }
