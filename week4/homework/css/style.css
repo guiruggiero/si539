@@ -29,9 +29,8 @@ h2{
 }
 
 nav li{
-  display:inline;
+  display: inline;
   padding-right:20px;
-
 }
 
 nav a{
@@ -56,12 +55,14 @@ nav a:hover{
   position: absolute;
   
   /* Place 40px higher */
-  margin: 40px;
+  margin: 40px; /* flag */
 }
 
 /* Add the selector and rule to move the skip 
 link to the exact top of the page. */
-
+.skip:focus{
+  position: top left; /* flag */
+}
 
 /* Add the selector and code to put a 2px black 
 border around all elements in focus. */
@@ -84,7 +85,8 @@ nav{
   text-align: left;
 
   /*Span the top row*/
-
+  grid-column: 1 / -1;
+  grid-row: 1;
 }
 
 header{
@@ -92,14 +94,16 @@ header{
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
-  color: #ffffff;
   height: 400px;                /* Parallax effect */
+  color: #ffffff;
 
   /* Set background-image to header.jpg in the images folder */
-
+  background-image: url("../images/header.jpg");
+  background-color: #595959;
 
   /* Span one row */
-
+  grid-column: 1 / -1;
+  grid-row: 2;
 }
 
 header p{
@@ -110,51 +114,63 @@ header p{
 }
 
 .container{
-  /* See documentation for mobile view */
-
+  display: grid;
+  grid-template-columns: 100px 400px 100px;
+  grid-template-rows: 30px auto auto auto auto auto 100px;
+  row-gap: 15px;
 }
 
 .about, .method, .clients, .contact{
   /* See documentation for mobile view */
-
+  grid-column: 2;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
    /* See documentation for mobile view */
+   grid-column: 1 / -1;
+   max-height: 700px;
+   overflow: hidden;
 }
 
 .about, .about-image{
   /* See documentation for mobile view */
-
+  grid-row: 3;
 }
 
 .method, .method-image{
   /* See documentation for mobile view */
+  grid-row: 4;
 }
 
 .clients, .clients-image{
   /* See documentation for mobile view */
+  grid-row: 5;
 }
 
 .contact, .contact-image{
   /* See documentation for mobile view */
-
+  grid-row: 6;
 }
 
 .text-block{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid #000000;
   padding: 30px;
+  display: inline-block; /* flag */
+
 
   /* Align the content in the center */
-
+  text-align: center;
+  vertical-align: middle; /* flag */
 }
 
 @media all and (min-width: 800px){
 
   .container{
-  /* See documentation for desktop view */
-
+    /* See documentation for desktop view */
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
   }
 
   nav{
@@ -166,15 +182,15 @@ header p{
 
   .about, .clients, .method-image, .contact-image{
     /* See documentation for desktop view */
-
+    grid-column: 3 / 5;
   }
 
   .about-image, .clients-image, .method, .contact{
     /* See documentation for desktop view */
+    grid-column: 2 / 4;
+  }
 
-    }
-
-}  /*End the media query*/
+}  /* End the media query */
 
 @media screen and (prefers-reduced-motion: reduce){
   html{
