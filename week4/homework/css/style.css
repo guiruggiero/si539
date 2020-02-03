@@ -3,8 +3,6 @@ SI 539, Winter 2020 - homework 4
 Developed by Gui Ruggiero
 */
 
-/* https://github.com/guiruggiero/homework4 */
-
 html{
     scroll-behavior: smooth;
 }
@@ -73,8 +71,8 @@ border around all elements in focus. */
 footer{
   background-color: #000000;
   color: #ffffff;
-  grid-column: 1 / -1; /*Can you explain what this does? It is counting from right to left, and the negative denotes that orientation*/
-  grid-row: 7; /*Can you rewrite it? Yes, you can omit "auto" since 1 is the default (and required here)*/
+  grid-column: 1 / -1; /* Second number is counting from right to left, and the negative denotes that orientation*/
+  grid-row: 7; /* "auto" can be omitted since 1 is the default (and required here)*/
   padding-top: 30px;
   text-align: center;
 }
@@ -121,34 +119,28 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  /* See documentation for mobile view */
   grid-column: 2;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
-   /* See documentation for mobile view */
    grid-column: 1 / -1;
    max-height: 700px;
    overflow: hidden;
 }
 
 .about, .about-image{
-  /* See documentation for mobile view */
   grid-row: 3;
 }
 
 .method, .method-image{
-  /* See documentation for mobile view */
   grid-row: 4;
 }
 
 .clients, .clients-image{
-  /* See documentation for mobile view */
   grid-row: 5;
 }
 
 .contact, .contact-image{
-  /* See documentation for mobile view */
   grid-row: 6;
 }
 
@@ -156,18 +148,15 @@ header p{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid #000000;
   padding: 30px;
-  display: inline-block; /* flag */
-
 
   /* Align the content in the center */
-  text-align: center;
-  vertical-align: middle; /* flag */
+  text-align: left;
+  justify-self: center;
+  align-self: center;
 }
 
 @media all and (min-width: 800px){
-
   .container{
-    /* See documentation for desktop view */
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
@@ -181,15 +170,12 @@ header p{
   }
 
   .about, .clients, .method-image, .contact-image{
-    /* See documentation for desktop view */
     grid-column: 3 / 5;
   }
 
   .about-image, .clients-image, .method, .contact{
-    /* See documentation for desktop view */
     grid-column: 2 / 4;
   }
-
 }  /* End the media query */
 
 @media screen and (prefers-reduced-motion: reduce){
