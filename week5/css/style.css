@@ -1,3 +1,14 @@
+/*
+SI 539, Winter 2020 - homework 5
+Developed by Gui Ruggiero
+*/
+
+/*
+https://github.com/guiruggiero/homework5
+
+https://guiruggiero.github.io/homework5
+*/
+
 body{
   font-family: 'Raleway', sans-serif; /* Test for this*/
   margin: 0;
@@ -23,7 +34,7 @@ p {
 }
 
 a.skip{
-  background: white;
+  background: #ffffff;
   left: 0;
   padding: 6px;
   position: absolute;
@@ -35,37 +46,50 @@ a.skip{
 
 a.skip:focus{
   top:20px;
-  color: black;
+  color: 000000;
   text-decoration-style: solid;
 }
 
 *:focus{
-  border: 2px solid black;
+  border: 2px solid 000000;
 }
 
 footer{
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   padding: 30px;
   text-align: center;
 }
 
-/*
-Keyframes for animation*/
-
+/* Keyframes for animation */
 @-webkit-keyframes logo_wiggle{
-
+  from{
+    width: 20px;
+  }
+  to{
+    width: 419px;
+  }
 }
 
 @keyframes logo_wiggle{
-
+  from{
+    width: 20px;
+  }
+  to{
+    width: 419px;
+  }
 } 
 
 #logo{
-  
+  -webkit-animation-name: logo_wiggle;
+          animation-name: logo_wiggle;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
-/* Cards! */
+/* Cards */
 .pricing{
     min-height: 500px;
   
@@ -74,7 +98,7 @@ Keyframes for animation*/
 .card {
   
   margin: 12px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 7px;
   padding: 0 0 50px 0;
 }
@@ -103,7 +127,7 @@ Keyframes for animation*/
   margin-left: 12px;
   border-radius: 7px;
   background: #288080;
-  color: white;
+  color: #ffffff;
   font-size: 1em;
 }
 
@@ -118,8 +142,7 @@ Keyframes for animation*/
           transform: initial;
 }
 
-/* Gallery! */
-
+/* Gallery */
 .gallery{
   
   min-height: 600px;
@@ -132,14 +155,21 @@ Keyframes for animation*/
 }
 
 /* Navbar */
-header{
-  
-  background: #fff;
+header{ /* flag - understand */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #ffffff;
   border-bottom: 3px solid #50C7C7;
 }
 
-.nav_links{
- 
+.nav_links{ /* flag - understand */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+
   list-style: none;
 }
 
@@ -157,7 +187,7 @@ header{
 
 @media screen and (min-width: 850px){
 
-  /* Cards! */
+  /* Cards */
   .card {
     
   }
@@ -168,13 +198,12 @@ header{
   }
 
   /* Navbar */
-
-  header{
-    
+  header{ /* flag - understand */
+    flex-direction: row;
   }
 
-  .nav_links{
-    
+  .nav_links{ /* flag - understand */
+    flex-direction: row;
   }
 
   .nav_item a{
@@ -183,9 +212,17 @@ header{
 }
 
 @media print { 
+  background-image: none;
   
+  /* #header{display:none;}
+  #adwrapper{display:none;}
+  td {
+    border-bottom: solid; 
+    border-right: solid; 
+    background-color: #c0c0c0;
+  } */
+
   .card {
     flex-basis: 200px;
   }
-
 }
