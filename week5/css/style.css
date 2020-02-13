@@ -9,6 +9,9 @@ https://github.com/guiruggiero/homework5
 https://guiruggiero.github.io/homework5
 */
 
+/* flag */
+/* Do NOT change the filename.  Instead, you have to think about what your URL should be. */
+
 body{
   font-family: 'Raleway', sans-serif; /* Test for this*/
   margin: 0;
@@ -190,6 +193,8 @@ header{
 
 @media screen and (min-width: 850px){
   /* Cards */
+  /* Edit to match our example. Achieve this by using a flex-property  */
+  /* to specify an initial size of 225px. CHANGE THIS TO BE 250px. */
   .card {
     
   }
@@ -215,8 +220,10 @@ header{
 
 @media print { 
   body{
-    /* background-image: none; */
+    color: #000000;
     background: none;
+    background-image: none;
+    background-color: #ffffff;
   }
 
   .pricing{ /* flag */
