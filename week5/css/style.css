@@ -3,14 +3,9 @@ SI 539, Winter 2020 - homework 5
 Developed by Gui Ruggiero
 */
 
-/*
-https://github.com/guiruggiero/homework5
-
-https://guiruggiero.github.io/homework5
-*/
-
-/* flag */
-/* Do NOT change the filename.  Instead, you have to think about what your URL should be. */
+/* flex
+flex-direction
+orientation */
 
 body{
   font-family: 'Raleway', sans-serif; /* Test for this*/
@@ -232,6 +227,10 @@ header{
 
   .card {
     flex-basis: 200px;
+  }
+
+  #gallery{
+    display: none;
   }
 
   .gallery{

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Sample Form</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+   <link rel="stylesheet" type="text/css" href="css/sample-style.css">
+</head>
+
+<body>
+   <form action="https://formspree.io/mbjoqlaj" method="POST">
+   <fieldset>
+      <legend>User Data</legend>
+
+      <div class = "contact">
+         <label for ="first">First Name:</label>
+         <input type="text" id ="first" name="fname" placeholder ="Your First Name"/> 
+         <label for ="last">Last Name:</label>
+         <input type="text" id ="last" name="lname" placeholder ="Your Last Name"/> 
+         <label for ="pass">Password:</label>
+         <input type="password" id="pass" name ="pw" placeholder ="At least 8 charachers" required/> 
+         <label for ="email">Email:</label>
+         <input type="email" id="email" name ="email"/> 
+         <label for ="addr">Address:</label>
+         <textarea id = "addr" required></textarea>
+      </div>
+
+      <div>
+         Select Game:
+         <label><input type="checkbox" name ="game" value="hockey"/>Hockey</label>
+         <label><input type="checkbox" name ="game" value="football"/>Football</label>
+         <label><input type="checkbox" name ="game" value="badminton"/>Badminton</label>
+         <label><input type="checkbox" name ="game" value="cricket"/>Cricket</label>
+         <label><input type="checkbox" name ="game" value="volleyball"/>Volleyball</label>
+      </div>
+
+      <div>
+         Grade Level<br>
+         <input type="radio" name ="level" id = "f" checked value  ="f"> <label for ="f">Freshman</label><br>
+         <input type="radio" name ="level" id = "s" value ="s"> <label for ="s" >Sophomore</label><br>
+         <input type="radio" name ="level" id = "j" value ="j"> <label for ="j">Junior</label><br>
+         <input type="radio" name ="level" id = "sr" value ="sr"><label for ="sr">Senior</label><br>
+         <input type="radio" name ="level" id = "grad" value ="gr"> <label for ="grad">Grad</label><br>
+         <input type="radio" name ="level" id = "other" value ="o"> <label for ="other">Other</label><br>
+      </div>
+
+      <div>
+         Select your age
+         <select name ="age">
+         <option> select </option>
+         <option> 15 </option>
+         <option> 16 </option>
+         <option> 17 </option>
+         <option> 18 </option>
+         <option> 19 </option>
+         <option> 20 </option>
+         <option> 21 </option>
+         <option> more than 22 </option>
+         </select>
+      </div>
+
+      <div>
+         Resume: <input type="file" name ="file"/>
+      </div>
+
+      <div>
+         Birthday: <input type ="date" name ="date"/>
+      </div>
+      
+      <div>
+         <input type="reset" value="Clear"/>
+         <input type="submit"/>
+      </div>
+   </fieldset>
+   </form>
+</body>
+</html>

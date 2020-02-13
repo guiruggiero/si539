@@ -1,0 +1,33 @@
+fieldset{
+   border-radius: 10px;
+}
+legend{
+   text-align: center;
+   font-family: Cursive;
+   font-variant-caps: small-caps; 
+}
+fieldset div{
+   border: 2px solid black;
+   margin: 2%;
+   padding: 1%;
+   border-radius: 5px;
+}
+
+.contact{
+   display: grid;
+
+}
+
+{
+   border: 1px solid black;
+   width: 120px;
+   padding: 3%;
+   margin-left: 10%;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+input, textarea, select{
+   background-color:#FFFFFF;
+}
