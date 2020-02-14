@@ -3,10 +3,6 @@ SI 539, Winter 2020 - homework 5
 Developed by Gui Ruggiero
 */
 
-/* flex
-flex-direction
-orientation */
-
 body{
   font-family: 'Raleway', sans-serif; /* Test for this*/
   margin: 0;
@@ -43,13 +39,13 @@ a.skip{
 }
 
 a.skip:focus{
-  top:20px;
-  color: 000000;
+  top: 20px;
+  color: #000000;
   text-decoration-style: solid;
 }
 
 *:focus{
-  border: 2px solid 000000;
+  border: 2px solid #000000;
 }
 
 footer{
@@ -88,16 +84,15 @@ footer{
 }
 
 /* Cards */
-.pricing{ /* flag */
+.pricing{
   min-height: 500px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
 
-.card { /* flag */
-  display: flex;
+.card {
   flex-basis: 400px;
   margin: 12px;
   background: #ffffff;
@@ -135,7 +130,7 @@ footer{
 
 .card h3{
   font-size: 4em;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -145,10 +140,11 @@ footer{
 }
 
 /* Gallery */
-.gallery{ /* flag */
+.gallery{
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   min-height: 600px;
 }
 
@@ -188,10 +184,8 @@ header{
 
 @media screen and (min-width: 850px){
   /* Cards */
-  /* Edit to match our example. Achieve this by using a flex-property  */
-  /* to specify an initial size of 225px. CHANGE THIS TO BE 250px. */
   .card {
-    
+    flex-basis: 250px;
   }
 
   .card_big{
@@ -202,6 +196,7 @@ header{
   /* Navbar */
   header{
     flex-direction: row;
+    justify-content: right;
   }
 
   .nav_links{
@@ -220,8 +215,9 @@ header{
     background-image: none;
     background-color: #ffffff;
   }
-
-  .pricing{ /* flag */
+  
+  /* Cards */
+  .pricing{
     align-items: initial;
   }
 
@@ -229,11 +225,20 @@ header{
     flex-basis: 200px;
   }
 
-  #gallery{
+  #gallery, .gallery{
     display: none;
   }
+}
 
-  .gallery{
-    display: none;
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior: auto;
+  }
+  
+  #logo{
+    -webkit-animation: none;
+            animation: none;
+    -webkit-transition: none;
+            transition: none;
   }
 }
