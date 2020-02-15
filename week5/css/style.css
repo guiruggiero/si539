@@ -166,7 +166,6 @@ header{
 .nav_links{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   list-style: none;
 }
 
@@ -196,7 +195,7 @@ header{
   /* Navbar */
   header{
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-between;
   }
 
   .nav_links{
