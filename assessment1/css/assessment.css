@@ -1,0 +1,47 @@
+/*
+SI 539, Winter 2020 - coding assessment #1
+Developed by Gui Ruggiero
+*/
+
+body{
+    background-image: url("../images/back-ground.jpeg");
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+img{
+    width: 120px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+#mystuff{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    /* margin: auto; */
+    text-align: center;
+}
+
+ div{
+    padding: 30px;
+    margin: 5px;
+ }
+
+ @media all and (min-width: 850px){
+    #mystuff{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 5px;
+        width: 95vw;
+    }
+
+    div:nth-child(even){
+        border: 2px solid #000000;
+     }
+  }
