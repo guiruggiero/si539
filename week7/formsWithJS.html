@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms with JS</title>
+	<script type="text/javascript" src = "js/formsWithJS.js"></script>
+	<style>
+		*:focus{
+			border: 5px solid red;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+		<legend>Email checker</legend>
+		<label>Preferred email address:
+  		<input type="email" id="email_addr" name="email_addr" required></label><br>
+
+  		<label>Repeat email address:
+  		<input type="email" id="email_addr_repeat" name="email_addr_repeat" required onchange="check1()"></label><br>
+		<!-- try oninput and onchange -->
+
+  		<input type = "submit">
+  </form>
+</body>
+</html>
