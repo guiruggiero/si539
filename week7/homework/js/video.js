@@ -4,49 +4,52 @@ function getVid(){
 	video = document.querySelector("#myVideo"); 
 }
 
-function playVid() { 
-
+function playVid(){ 
+	video.play();
 	console.log("Play Video");
 } 
 
-function pauseVid() { 
-
+function pauseVid(){ 
+	video.pause();
 	console.log("Pause Video");
 } 
 
-function decreaseSpeed() { 
-
-  	console.log("Speed is "+ );
+function decreaseSpeed(){ 
+	video.playbackRate *= 0.5;
+  	console.log("Speed is " + );
 } 
 
-function increaseSpeed() {
-
-	console.log("Speed is "+ );
+function increaseSpeed(){
+	video.playbackRate *= 2;
+	console.log("Speed is " + );
 } 
 
-function skipAhead() {
-
-	console.log("Current location is "+ );
+function skipAhead(){
+	video.seek(15);
+	console.log("Current location is " + (video.currentTime + 15);
 } 
 
-function mute() { 
-  	
-  		console.log("Unmuted");
-  	
-      	console.log("Muted");
+function mute(){ 
+	if(video.muted){
+		video.muted = false;
+		console.log("Changed to unmuted");
+	} else{
+		video.muted = true;
+		console.log("Changed to muted");
+	}
 }
 
-function changeVolume() {
-;	console.log("Volume is ");
-}
-       
+function changeVolume(){
 
-function gray() { 
+	console.log("Volume is " + );
+}
+
+function gray(){ 
 
 	console.log("In grayscale")
 }
 
-function color() {
+function color(){
 
 	console.log("In color") 
 }

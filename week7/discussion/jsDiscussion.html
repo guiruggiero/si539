@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Discussion</title>
+
+<script type="text/javascript">
+	function displayInformation () {
+		// Your code goes here. 
+		// Do not change any other code in this file
+		// All of the steps below must be achieved using JavaScript!
+
+		/*
+		1. Change the h1 element to your name.
+		2. Update the three span elements using ONLY JavaScript
+		3. Change the background color and margin for the entire page.
+		4. If someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line.  Don't use paragraphs. 
+		*/
+	}
+</script>
+<style>
+p{
+	background-color: #b3b3b3;
+	border: 3px solid #FFFFFF;
+	padding: 3%;
+	font-size: 1.1em;
+	line-height: 1.5;
+}
+</style>
+</head>
+<body onload = "displayInformation();">
+	<h1>Your name goes here</h1>
+
+	<ol>
+		<li>Apples</li>
+		<li>Bananas</li>
+		<li>Celery</li>
+		<li>Doughnuts</li>
+	</ol>
+	<h2>Use JavaScript to display the following information here:</h2>
+	<p>
+		The URL of this page is: <span id = "URL"></span><br/>
+		The number of list items for this page: <span id = "items"></span><br/>
+		The current date/time is: <span id = "time"></span><br/>
+	</p>
+	<ul>
+		<li>Kent State</li>
+		<li>University of Pittsburgh</li>
+		<li>University of Ulster</li>
+		<li>California State University Long Beach</li>
+		<li oncopy="copyFunction()">University of Michigan</li>
+	</ul>
+	<div id="cheer">
+
+	</div>
+
+</body>
+</html>
