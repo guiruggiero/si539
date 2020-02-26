@@ -7,12 +7,6 @@ var video;
 
 function getVid(){
 	video = document.querySelector("#myVideo");
-
-	//Update the play and pause button to use images that you find or create on your own.
-	//The image should not cover the words and it should NOT be a background-image.
-	//You must work independently on this and cite resources.  If a resource is overly cited fewer points will be awarded.
-	
-	// document.querySelector("#play").innerHTML = "Testing"
 }
 
 function playVid(){ 
@@ -54,29 +48,29 @@ function changeVolume(){
 	console.log("Volume is " + newVolumeText);
 	document.querySelector("#volume").innerHTML = newVolumeText;
 }
+function skipAhead(){
+	var newTime = video.currentTime + 60;
+	if(newTime > 596){
+		video.currentTime = 0;
+		video.playbackRate = 1;
+		console.log("New location is 0s");
+	}
+	else{
+		video.currentTime = video.currentTime + 60;
+		console.log("New location is " + video.currentTime + "s");
+	}
+}
+
 
 
 
 
 function gray(){ //Utilize the existing grayscale class
-	video.color = true;
+	video.color = grayscale;
 	console.log("In grayscale");
 }
 
 function color(){ //Remove the grayscale class
 	video.gray = false;
 	console.log("In color");
-}
-
-function skipAhead(){
-	video.seek(60); //Advance the current video by 60 seconds
-
-	//If the video length has been exceeded - go back to the start of the video and reset the play speed to “normal.”
-	if(video.muted){
-		video.muted = false;
-		console.log("Unmuted");
-		document.querySelector("#mute").innerHTML = "Mute"
-	}
-
-	console.log("Current location is " + video.currentTime);
 }

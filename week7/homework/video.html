@@ -19,7 +19,35 @@
 			margin-bottom: 5px;
 		}
 		
-		/*Use CSS before property to display the image before the text in the buttons*/
+		/* I could not find a way to do this that is not with a
+		background image, so I did it this way anyway */
+		.play{
+			background: url("img/play.png") no-repeat left;
+			text-align: right;
+			width: 130px;
+			height: 50px;
+			border: 1px solid #000000;
+			background-color: #ebebeb;
+			transition-duration: 0.2s;
+		}
+
+		.play:hover{
+			background-color: #d6d6d6;
+		}
+
+		.pause{
+			background: url("img/pause.png") no-repeat left;
+			text-align: right;
+			width: 140px;
+			height: 50px;
+			border: 1px solid #000000;
+			background-color: #ebebeb;
+			transition-duration: 0.2s;
+		}
+
+		.pause:hover{
+			background-color: #d6d6d6;
+		}
 	</style>
 </head>
 
@@ -32,7 +60,7 @@
 		<button onclick="decreaseSpeed()" type="button">Slow Down</button>
 		<button onclick="increaseSpeed()" type="button">Speed Up</button><br>
 		<button onclick="skipAhead()" type="button">Skip Ahead</button><br>
-
+		
 		<figure>
 			<video id="myVideo">
 				<source src="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.ogg" /> 
