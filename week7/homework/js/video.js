@@ -53,24 +53,20 @@ function skipAhead(){
 	if(newTime > 596){
 		video.currentTime = 0;
 		video.playbackRate = 1;
-		console.log("New location is 0s");
+		console.log("Location is 0s");
 	}
 	else{
 		video.currentTime = video.currentTime + 60;
-		console.log("New location is " + video.currentTime + "s");
+		console.log("Location is " + video.currentTime + "s");
 	}
 }
 
-
-
-
-
-function gray(){ //Utilize the existing grayscale class
-	video.color = grayscale;
-	console.log("In grayscale");
+function gray(){
+	video.classList.add("grayscale")
+	console.log("Video in grayscale");
 }
 
-function color(){ //Remove the grayscale class
-	video.gray = false;
-	console.log("In color");
+function color(){
+	video.classList.remove("grayscale");
+	console.log("Video in color");
 }
