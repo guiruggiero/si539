@@ -1,0 +1,15 @@
+form{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 20px;
+    }
+
+input[type="submit"]{
+  width: 25%;
+  min-height: 5vh;
+  grid-row-gap: 20px;
+  justify-self:center;
+  border: 3px solid green;
+  grid-column: 1 / span 2;
+  font-size: 125%;
+}

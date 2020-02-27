@@ -1,0 +1,9 @@
+.alert{
+	font-size: 125%;
+	color:#B80000;
+	font-weight: bold;
+}
+
+.errormsg{
+	display: none;
+}
