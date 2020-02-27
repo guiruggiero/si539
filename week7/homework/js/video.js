@@ -1,8 +1,6 @@
 // SI 539, Winter 2020 - homework 6
 // Developed by Gui Ruggiero
 
-// https://github.com/guiruggiero/homework6
-
 var video;
 
 function getVid(){
@@ -52,8 +50,9 @@ function skipAhead(){
 	var newTime = video.currentTime + 60;
 	if(newTime > 596){
 		video.currentTime = 0;
+		video.pause();
 		video.playbackRate = 1;
-		console.log("Location is 0s");
+		console.log("Location is 0s at normal speed (1)");
 	}
 	else{
 		video.currentTime = video.currentTime + 60;
