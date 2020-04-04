@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Remove Style</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function remove_classes()
+		{
+			$("p").removeClass();
+		}
+
+		function toggle_classes()
+		{
+		$("p").toggleClass();
+		}
+	</script>
+
+	<style>
+		p{
+			border:2px solid blue;
+			color:black;
+			background-color: lightgrey;
+		}
+		p.center {
+	    	text-align: center;
+	    	text-decoration: underline;
+		}
+		p.large {
+	    	font-size: 200%;
+	    	font-family: Cursive;
+		}
+	}
+	</style>
+</head>
+<body>
+	  <head>
+  <script src="https://code.jquery.com/jquery-git.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Remove all CSS classes using jQuery</title>
+  </head>
+  <body>
+	<p class="center large">This paragraph uses the center and large classes.</p>
+
+	<p class="center">This paragraph uses the center class.</p>
+
+	<p class>This paragraph uses no classes.</p>
+    
+	<input type="button" value="Click to remove all classes" onclick="remove_classes()" />
+ 	  
+
+ 	<input type="button" value="Click to toggle all classes" onclick="toggle_classes()" />
+
+  </body>
+  </html>
+</body>
+</html>

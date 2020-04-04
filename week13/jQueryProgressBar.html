@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Progress bar</title>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+	<style>
+		#HTML, #CSS, #JS {
+		    width: 400px;
+		    height: 20px;
+		    border: 1px solid #111;
+		    background-color: #292929;
+		   	margin-bottom: 15px;
+
+		}
+		div div {
+		    height: 100%;
+		    color: #fff;
+		    text-align: right;
+		    line-height: 20px; /* same as #HTML5 height if we want text middle aligned */
+		    width: 0;
+		    font-size:200%;
+		    background-color: #0074C2;
+}
+</style>
+</head>
+<body>
+	<main>
+		<h1>Using jQuery to make an animated progress bar.</h1>
+
+		<section>
+			HTML5<div id="HTML">
+				<div></div>
+			</div>
+		</section>
+
+	<section>
+			CSS3<div id="CSS">
+				<div></div>
+			</div>
+		</section>
+
+	<section>
+			JavaScript<div id="JS">
+				<div></div>
+			</div>
+		</section>
+
+	<script>
+		function progress(percent, $element) {
+		    var progressBarWidth = percent * $element.width() / 100;
+		    console.log("here")
+		    $element.find('div').animate({ 
+		    	width: progressBarWidth },
+		    	 1000).html(percent + "% ");
+		}
+
+
+		progress(80, $('#HTML'));
+
+		progress(70, $('#CSS'));
+
+		progress(45, $('#JS'));
+
+	</script>
+	
+</body>
+</html>

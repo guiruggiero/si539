@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Scroll with jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style >
+	 body{
+		font-size: 200%;
+	 }
+  </style>
+</head>
+<body>
+  <main id  = "top">
+    <a href='#bottom'>Go To the Bottom (kind of quickly)</a> 
+
+    <h1>An example of jQuery with Scroll To Top</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+ 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+  
+    <a id = "bottom" href='#top'>Go To the Top (slowly)</a> 
+  </main>
+  
+  <script>
+    $("a[href='#top']").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, 2500);
+      return false;
+  });
+
+    $("a[href='#bottom']").click(function() {
+      $("html, body").animate({ scrollTop: $(document).height() }, 500);
+        return false;
+    });
+
+</script>
+
+</body>
+</html>

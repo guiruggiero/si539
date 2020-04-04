@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>Remove broken image links using jQuery</title>
+  <style>
+    img{
+      margin: 50px;
+      width:250px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Remove broken image links using jQuery</h1>
+    
+    <p>There are three image elements on this page but one of them has a broken link for the image. We use jQuery to hide it.</p>
+  
+    <p>Since it wasn't obvious, I am using a timer on the hide.</p>
+  
+    <img src="https://i2.wp.com/mi2lab.sites.uofmhosting.net/wp-content/uploads/2016/10/umsi_logo.jp" alt="w3resource logo" onerror='$(this).hide(1000);'/></a>
+
+    <img src="https://i.pinimg.com/280x280_RS/7b/04/b6/7b04b6fefa59e507cf5d68ab90dc9f4c.jpg" alt="w3resource logo" onerror='$(this).hide(1000);'/></a>
+
+    <img src="http://datalit.sites.uofmhosting.net/wp-content/uploads/2016/04/UMSI-logo.jpg" alt="w3resource logo" onerror='$(this).hide(1000);'/></a>
+  </main>
+</body>
+</html>

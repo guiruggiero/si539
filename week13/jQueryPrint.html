@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+
+
+  <meta charset="utf-8">
+  <title>Print a page using jQuery</title>
+
+</head>
+<body>
+  
+  <main>
+    <h1>Using jQuery to print a page.</h1>
+
+    <p>In this exampel I am adding jQuery to the FontAwexome printer icon.  When you click on the icon the page will be sent to your printer.</p>
+
+    <p>Here is some exra text.  Just to make it seem more like a real page.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi, dolor temporibus nulla similique expedita nam cum consequatur earum delectus porro aperiam repellendus, hic suscipit molestias sed in incidunt voluptas?</p>
+
+	 <i class="fas fa-print fa-4x printPage" aria-label ="Print"></i>
+  </main>
+
+  <script>
+	 $('.printPage').click(function(){
+           window.print();
+           console.log("printing")
+    });
+  </script>
+</body>
+</html>
