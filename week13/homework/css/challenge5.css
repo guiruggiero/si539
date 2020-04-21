@@ -1,0 +1,39 @@
+body{
+	margin: 2%;
+	border: 1px solid black;
+	background-color: #E8E8E8;
+}
+#display{
+    display: flex;
+	width: 388px;
+	height: 325px;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	border:5px solid black;
+	margin:0 auto;
+	padding: 0px 10px;
+	color:#FFFFFF;
+	background-color: #6E3DFF;
+	background-size: 100%;
+	margin-bottom:25px;
+	font-size:150%;
+
+	/*For when the image appears*/
+	background-repeat: no-repeat;
+}
+.thumbnail{
+	width:10%;
+	border: 10px solid black;
+}
+
+#thumbs{
+	display: flex;
+	justify-content: space-around;
+}
+img{
+	width:95%;
+}
+h1{
+	text-align: center;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Challenge #4</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>JavaScript Challenge #4</h1>
+	  <form action="challenge5.html" method  = "POST" id = "challenge4_form">
+        <fieldset>
+        <legend>Personal details</legend>
+          <label for="name">Full name: </label>
+            <input type="text" name="name" id="name"><br/>
+       
+            <p class="errormsg alert" id="nameError">Please enter your name above!</p>
+
+          <label for ="addr">
+            Street Address:</label>
+            <input type="text" name="addr" id="addr">
+       
+            <p class="errormsg alert" id="addrError">Please enter your street address!</p>
+        </fieldset>
+        <input type="submit" value="Submit it!"> 
+    </form>
+    <p class = "alert">
+    Make sure to test this challenge after you have deployed your code.</p>
+
+    <p>What could you change in the HTML (if you were allowed) to remove the need for JS with this page and still ensure that both of these fields are filled out?</p>
+  </main>
+  <script src = "js/challenge4.js"></script>
+</body>
+</html>
