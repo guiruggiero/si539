@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Quiz</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function displayInformation () {
+      //YOUR CODE HERE.
+            document.title = $("li:nth-child(3)").html();
+
+            $("li").css("color", "#008000");
+   }
+  </script>
+</head>
+<body>
+   <h1>Your name goes here</h1>
+   <ol>
+      <li>Apples</li>
+      <li>Bananas</li>
+      <li>Celery</li>
+      <li>Doughnuts</li>
+  </ol>
+  <script>
+  displayInformation();
+  </script>
+</body>
+</html>

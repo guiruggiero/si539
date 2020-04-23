@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style> 
+  #early, #late{ display: none;}
+</style>
+<script>
+
+function change(){
+//Write a function that changes the paragraph
+// to display "Have a great day!" in green text
+// if it is currently before 7:00pm.
+        if(new Date().getHours() < 19){
+            $("#early").css({"color":"#008000", "display":"block"});
+            $("#late").css("display", "none");
+        }
+
+//Otherwise, change the paragraph
+// to display "I hope you had great day!" in 
+// blue text
+        else{
+            $("#late").css({"color":"#FF0000", "display":"block"}); // if blue, #0000FF          
+            $("#early").css("display", "none");
+        };
+
+}
+</script>
+
+<body>
+
+<h1>JavaScript quiz 2019</h1>
+
+<button onclick='change()'> Click me!! </button>
+
+<p id="early">Have a great day!</p>
+<p id="late">I hope you had a great day!</p>
+
+</body>
+</html>
