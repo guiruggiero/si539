@@ -3,7 +3,7 @@ images = document.querySelectorAll("img");
 // console.log(images);
 // console.log(images.length);
 
-for (var i = 0; i < images.length - 1; i++) {
+for (var i = 0; i < images.length; i++) {
     images[i].addEventListener("mouseover", show); 
     images[i].addEventListener("focus", show); 
 

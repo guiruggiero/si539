@@ -29,4 +29,3 @@ function hide(){
 	document.querySelector('#display').style.backgroundImage="url('')";
 	document.querySelector('#display').innerHTML= msg;
 }
-
